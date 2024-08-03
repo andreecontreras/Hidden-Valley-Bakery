@@ -49,14 +49,106 @@ p {
 
 ul {
     list-style: none;
+    margin: 50px;
 }
 
 .container {
     width: 100%;
     max-width: 122.5rem;
-    margin: 0 auto;
-    padding: 0 2.4rem;
 }
+
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    width: 25%;
+    height: 100%;
+    float: left;
+    height: 500px;
+    background-color: #1E2027
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.sidebar li {
+    padding: 16px 24px;
+    color: #fff;
+    font: var(--body-font);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #e1b164; /* Change this to your desired hover background color */
+}
+
+.main-content {
+    width: 70%;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row by default */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.menu-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin to separate items */
+    text-align: center; /* Center align text */
+    animation: slideIn 0.5s ease-out; /* Apply the animation */
+    padding-top: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.img-container img {
+    border-radius: 50%; /* Circular border */
+    width: 100px;
+    height: 100px;
+}
+
+.menu-item .info {
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.menu-item .info h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-item .info p {
+    margin: 5px 0;
+}
+
+
+
 
 /* HEADER */
 

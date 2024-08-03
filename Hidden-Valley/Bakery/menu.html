@@ -29,10 +29,10 @@
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link active">About Us</a>
+                        <a href="about.html" class="nav-link">About Us</a>
                     </li>
                     <li class=" nav-item">
-                        <a href="menu.html" class="nav-link">Menu</a>
+                        <a href="menu.html" class="nav-link active">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a href="bakers.html" class="nav-link">Bakers</a>
@@ -48,72 +48,19 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section class="about">
+    <section class="menu">
         <div class="container">
-            <div class="row">
-                <div class="description padding-right animate-left">
-                    <div class="global-headline">
-                        <h2 class="sub-headline">
-                            Read
-                        </h2>
-                        <h3 class="headline headline-dark">Our Story</h3>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis harum, deserunt repellendus culpa
-                        animi minus similique
-                        blanditiis repudiandae nisi, explicabo</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic veritatis perferendis molestias
-                        eius velit repellendus</p>
-                </div>
-                <div class="image animate-right">
-                    <img class="animate-top" src="images/about-img-2.jpeg" alt="bread">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="about">
-        <div class="container">
-            <div class="row">
-                <div class="image padding-right margin-bottom animate-left">
-                    <img src="images/about-img-1.jpeg" alt="bread">
-                </div>
-                <div class="description animate-right">
-                    <div class="global-headline">
-                        <h2 class="sub-headline">
-                            Bread
-                        </h2>
-                        <h3 class="headline headline-dark">So Good</h3>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum dolor earum
-                        accusamus suscipit. Officia atque vitae excepturi deserunt nihil?</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RESERVATION SECTION -->
-    <section id="reservation" class="reservation">
-        <div class="container">
-            <div class="reservation__container">
-                <h4>Book Your Table</h4>
-                <form action="#" class="reservation__form">
-                    <select name="persons">
-                        <option>1 Person</option>
-                        <option>2 Person</option>
-                        <option>3 Person</option>
-                        <option>4 Person</option>
-                        <option>5 Person</option>
-                        <option>6 Person</option>
-                        <option>7 Person</option>
-                    </select>
-                    <input type="date" class="reservation__date">
-                    <input type="time" class="reservation__time">
-                    <button class="btn btn-primary submit__reservation">Book Now</button>
-                </form>
-            </div>
+            <aside class="sidebar">
+                <ul>
+                    <li onclick="showCategory('pastries')">Pastries</li>
+                    <li onclick="showCategory('drinks')">Drinks</li>
+                    <li onclick="showCategory('sandwiches')">Sandwiches</li>
+                    <li onclick="showCategory('specials')">Specials</li>
+                </ul>
+            </aside>
+            <main class="main-content" id="main-content">
+                <!-- Menu items will be displayed here -->
+            </main>
         </div>
     </section>
 
