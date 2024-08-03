@@ -73,15 +73,20 @@ function showCategory(category) {
     const mainContent = document.getElementById('main-content');
     mainContent.innerHTML = '';
 
-    menuItems[category].forEach(item => {
+    menuItems[category].forEach((item, index) => {
         const menuItem = document.createElement('div');
         menuItem.className = 'menu-item';
+
+        const imgContainer = document.createElement('div');
+        imgContainer.className = 'img-container';
 
         const img = document.createElement('img');
         img.src = item.imgSrc;
         img.alt = item.name;
         img.width = 100;
         img.height = 100;
+
+        imgContainer.appendChild(img);
 
         const info = document.createElement('div');
         info.className = 'info';
@@ -99,12 +104,15 @@ function showCategory(category) {
         info.appendChild(description);
         info.appendChild(price);
 
-        menuItem.appendChild(img);
+        menuItem.appendChild(imgContainer);
         menuItem.appendChild(info);
 
         mainContent.appendChild(menuItem);
     });
 }
+
+// Initially show the first category
+showCategory('pastries');
 
 // Initially show the first category
 showCategory('pastries');
