@@ -526,13 +526,13 @@ footer .asterisk {
 }
 
 .phone-number {
-    font-size: 1.4em; /* Adjust the font size as needed (1em is the default size) */
-    color: white;     /* Set the color to white */
-    text-decoration: none; /* Remove underline */
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
 }
 
 .phone-number:hover {
-    color: #ccc; /* Optional: change color on hover for better user experience */
+    color: #ccc;
 }
 
 .newsletter-form {
