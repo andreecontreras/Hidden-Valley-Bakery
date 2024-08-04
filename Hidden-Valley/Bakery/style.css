@@ -36,7 +36,7 @@ section {
 
 img {
     width: 100%;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 a {
@@ -93,15 +93,18 @@ ul {
 }
 
 .sidebar li:hover {
-    background-color: #e1b164; /* Change this to your desired hover background color */
+    background-color: #e1b164;
+    /* Change this to your desired hover background color */
 }
 
 .main-content {
     width: 70%;
     float: right;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 items per row by default */
-    gap: 20px; /* Space between items */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 items per row by default */
+    gap: 20px;
+    /* Space between items */
     padding: 20px;
 }
 
@@ -111,9 +114,12 @@ ul {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Add margin to separate items */
-    text-align: center; /* Center align text */
-    animation: slideIn 0.5s ease-out; /* Apply the animation */
+    margin-bottom: 20px;
+    /* Add margin to separate items */
+    text-align: center;
+    /* Center align text */
+    animation: slideIn 0.5s ease-out;
+    /* Apply the animation */
     padding-top: 20px;
 }
 
@@ -122,20 +128,24 @@ ul {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
     }
 }
+
 .img-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px; /* Space between image and text */
+    margin-bottom: 10px;
+    /* Space between image and text */
 }
 
 .img-container img {
-    border-radius: 50%; /* Circular border */
+    border-radius: 50%;
+    /* Circular border */
     width: 100px;
     height: 100px;
 }
@@ -165,7 +175,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5), transparent);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .navbar {
@@ -225,7 +235,7 @@ header {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     opacity: 0;
     transform: scale(0);
@@ -237,7 +247,7 @@ header {
 }
 
 .show .fa-bars {
-    display: none; 
+    display: none;
 }
 
 .show .nav-list {
@@ -250,7 +260,7 @@ header {
 }
 
 .nav-item {
-    border-bottom: 2px solid rgba(255,255,255,.3);
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
 }
 
 .nav-link {
@@ -525,6 +535,16 @@ footer .asterisk {
     color: var(--secondary-font-color);
 }
 
+.phone-number {
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+}
+
+.phone-number:hover {
+    color: #ccc;
+}
+
 .newsletter-form {
     width: 100%;
     position: relative;
@@ -569,7 +589,7 @@ footer .asterisk {
     margin: 3rem 0;
 }
 
-.reservation__form > * {
+.reservation__form>* {
     display: block;
     width: 100%;
 }
@@ -743,7 +763,7 @@ footer .asterisk {
         align-items: center;
     }
 
-    .row > div {
+    .row>div {
         flex: 1;
     }
 
@@ -783,7 +803,7 @@ footer .asterisk {
         margin: 4rem 0 2rem;
     }
 
-    .reservation__form > *:not(:last-child) {
+    .reservation__form>*:not(:last-child) {
         margin-right: 2rem;
     }
 
