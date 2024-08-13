@@ -49,6 +49,9 @@ p {
 
 ul {
     list-style: none;
+}
+
+.sidebar .ul {
     margin: 50px;
 }
 
@@ -63,6 +66,7 @@ ul {
     display: flex;
     padding: 0;
     margin: 0;
+    min-height: 500px;
 }
 
 .menu .container {
@@ -72,9 +76,8 @@ ul {
 
 .sidebar {
     width: 25%;
-    height: 100%;
     float: left;
-    height: 500px;
+    height: 100%;
     background-color: #1E2027
 }
 
@@ -92,12 +95,27 @@ ul {
     cursor: pointer;
 }
 
+h2 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000; /* Thinner border */
+    padding-bottom: 5px;
+    font-weight: bold; /* Bold lettering */
+    font-size: 24px; /* Larger font size */
+    color: #000; /* Black text color */
+}
+
 .sidebar li:hover {
     background-color: #e1b164; /* Change this to your desired hover background color */
 }
 
+.content {
+    width: 75%;
+    float: right;
+    padding: 20px;
+}
+
 .main-content {
-    width: 70%;
+    width: 100%;
     float: right;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 items per row by default */
@@ -115,6 +133,7 @@ ul {
     text-align: center; /* Center align text */
     animation: slideIn 0.5s ease-out; /* Apply the animation */
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 @keyframes slideIn {
@@ -146,12 +165,11 @@ ul {
 }
 
 .menu-item .info h3 {
-    padding: 10px;
     text-align: center;
 }
 
 .menu-item .info p {
-    margin: 5px 0;
+    margin: 0 20px 0 20px;
 }
 
 
@@ -807,6 +825,18 @@ footer .asterisk {
         display: block;
     }
 
+}
+
+@media (max-width: 856px) {
+    .main-content {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+}
+
+@media (max-width: 630px) {
+    .main-content {
+        grid-template-columns: 1fr; /* 2 items per row */
+    }
 }
 
 /*          ANIMATIONS           */
